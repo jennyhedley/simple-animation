@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Base exercise page</title>
+
+    <meta name="description" content="A simple exercise template." />
+    <!-- styles -->
+    <style>
+      .diving-board {
+        height: 200px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        animation-duration: 3s;
+        animation-name: spring;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        transform-origin: 0px 0px;
+      }
+      @keyframes spring {
+        from {
+          background-image: url(https://cdn.glitch.com/bd1a6e95-19da-4a28-9a6c-fd3346b1ebbf%2F2427966105_df5ae140f2_w.jpg?v=1620800929673);
+          margin-left: 0;
+          transform: rotate(-45deg);
+        }
+        50% {
+          background-image: url(https://cdn.glitch.com/bd1a6e95-19da-4a28-9a6c-fd3346b1ebbf%2F3013022248_036ffe6948_w.jpg?v=1620800936936);
+          margin-left: 50px;
+        }
+                75% {
+          background-image: url(https://cdn.glitch.com/bd1a6e95-19da-4a28-9a6c-fd3346b1ebbf%2F3104113768_6dc06339e8_w.jpg?v=1620801252416);
+          margin-left: 100px;
+        }
+        to {
+          background-image: url(https://cdn.glitch.com/bd1a6e95-19da-4a28-9a6c-fd3346b1ebbf%2F47172904492_3564924820_w.jpg?v=1620801083641);
+          margin-left: 150px;
+          transform: rotate(45deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>A Simple Animation</h1>
+    <div class="diving-board"></div>
+    
+    <!-- script -->
+    <script></script>
+    <!-- include the Glitch button to show what the webpage is about and
+          to make it easier for folks to view source and remix -->
+    <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
+    <script src="https://button.glitch.me/button.js" defer></script>
+  </body>
+</html>
